@@ -87,7 +87,7 @@ It also builds an **internal import graph** that the agent can query. Triage the
 ## Quick start
 
 ```bash
-git clone <this-repository> py-cleaner && cd py-cleaner
+git clone https://github.com/Kant1-18/py-cleaner.git && cd py-cleaner
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt          # or: pip install -e ".[google]"
 

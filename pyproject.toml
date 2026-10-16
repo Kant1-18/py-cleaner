@@ -20,6 +20,11 @@ dependencies = [
     "libcst>=1.4",
 ]
 
+[project.urls]
+Homepage = "https://github.com/Kant1-18/py-cleaner"
+Repository = "https://github.com/Kant1-18/py-cleaner"
+Issues = "https://github.com/Kant1-18/py-cleaner/issues"
+
 [project.optional-dependencies]
 # LLM providers: langchain-anthropic is included by default, the others on demand.
 openai = ["langchain-openai"]
