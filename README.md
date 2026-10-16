@@ -17,14 +17,13 @@ Deterministic analysis first, LLM second — so the model only sees what deserve
 
 </div>
 
-
 ---
 
 ## Why py-cleaner?
 
 Python projects rarely fail loudly. They fail **quietly**: an `except: continue` that drops
 records, business rules buried in a route handler, two copies of the same function slowly
-drifting apart, a `CLAUDE.md` or README that sends your coding agent to a file deleted months ago.
+drifting apart, a `CLAUDE.md` or README that sends your coding agent to a file deleted several months ago.
 
 py-cleaner hunts for exactly that, with three principles:
 
