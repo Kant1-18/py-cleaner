@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-cleaner"
+version = "0.1.0"
+description = "CLI agent that refactors Python codebases (prototype)"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=1.4,<2",
+    "langchain-anthropic>=1.7,<2",
+    "pydantic>=2.7",
+    "rich>=13",
+    "python-dotenv>=1.0",
+    "ruff>=0.5",
+    "radon>=6",
+    "vulture>=2.11",
+    "libcst>=1.4",
+]
+
+[project.optional-dependencies]
+# LLM providers: langchain-anthropic is included by default, the others on demand.
+openai = ["langchain-openai"]
+google = ["langchain-google-genai"]
+mistral = ["langchain-mistralai"]
+ollama = ["langchain-ollama"]
+groq = ["langchain-groq"]
+all-providers = ["langchain-openai", "langchain-google-genai", "langchain-mistralai", "langchain-ollama", "langchain-groq"]
+# Django is not used by the tool itself: it is only needed to verify the demo
+# project (manage.py check) from the same environment.
+dev = ["pytest>=8", "django>=5"]
+
+[project.scripts]
+py-cleaner = "pycleaner.__main__:main"
+
+[tool.setuptools]
+packages = ["pycleaner"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

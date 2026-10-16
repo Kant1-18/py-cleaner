@@ -1,0 +1,36 @@
+# Secrets — never commit API keys (.env.example is the template to share)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python build & bytecode
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# py-cleaner output when run on this repository
+py-cleaner-report.md
+
+# Demo project runtime artefacts
+demo_repo/db.sqlite3
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

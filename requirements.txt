@@ -1,0 +1,26 @@
+# py-cleaner — exact versions the prototype was tested with (Python 3.11+).
+# Alternative: `pip install -e ".[google]"` (see pyproject.toml for every provider extra).
+
+# Agent framework
+langchain==1.4.6
+langchain-core==1.6.11
+langgraph==1.2.15
+
+# LLM providers (add the one you use: langchain-openai, langchain-mistralai, langchain-ollama…)
+langchain-anthropic==1.7.6
+langchain-google-genai==4.4.2
+
+# Static analysis & code rewriting
+ruff==0.17.1
+radon==6.0.1
+vulture==2.16
+libcst==1.9.0
+
+# Models, configuration, terminal UI
+pydantic==2.14.1
+python-dotenv==1.2.4
+rich==15.0.0
+
+# Demo project verification (manage.py check, pytest) — not used by the tool itself
+Django==6.1.2
+pytest==9.1.1
