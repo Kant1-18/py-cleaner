@@ -25,7 +25,7 @@ Python projects rarely fail loudly. They fail **quietly**: an `except: continue`
 records, business rules buried in a route handler, two copies of the same function slowly
 drifting apart, a `CLAUDE.md` or README that sends your coding agent to a file deleted several months ago.
 
-py-cleaner hunts for exactly that, with three principles:
+The py-cleaner hunts for exactly that, with three principles:
 
 - **🔍 Deterministic first.** `ruff`, `radon`, `vulture` and custom AST rules do the heavy lifting
   for free. Only files flagged by the scan are sent to the LLM.
