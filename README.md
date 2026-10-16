@@ -6,7 +6,7 @@
 plans a refactoring and applies it in small, verified git commits.**
 
 Django, Flask, FastAPI, libraries, CLIs, scripts, `src/` layouts, monorepos.<br>
-Deterministic analysis first, LLM second — so the model only sees what deserves its attention.
+Deterministic analysis first, LLM second — so the model only sees what deserves its attention !
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1.x-1C3C3C?logo=langchain&logoColor=white)
